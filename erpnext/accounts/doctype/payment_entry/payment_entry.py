@@ -1174,7 +1174,7 @@ class PaymentEntry(AccountsController):
 						_("Amount {0} {1} against {2} {3}").format(
 							_(self.party_account_currency),
 							d.allocated_amount,
-							d.reference_doctype,
+							_(d.reference_doctype),
 							d.reference_name,
 						)
 					)
