@@ -119,7 +119,7 @@ erpnext.accounts.unreconcile_payment = {
 						};
 
 						let d = new frappe.ui.Dialog({
-							title: "UnReconcile Allocations",
+							title: __("UnReconcile Allocations"),
 							fields: unreconcile_dialog_fields,
 							size: "large",
 							cannot_add_rows: true,
