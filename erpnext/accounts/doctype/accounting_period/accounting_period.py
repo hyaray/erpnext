@@ -124,7 +124,7 @@ def validate_accounting_period_on_doc_save(doc, method=None):
 	if accounting_period:
 		frappe.throw(
 			_("You cannot create a {0} within the closed Accounting Period {1}").format(
-				doc.doctype, frappe.bold(accounting_period[0]["name"])
+				doc.doctype, frappe.bold(_(accounting_period[0]["name"]))
 			),
 			ClosedAccountingPeriod,
 		)
